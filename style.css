@@ -3,41 +3,46 @@
 }
 ul{
     display: grid;
+    grid-gap: 1rem;
     margin: auto;
     width: 70vw;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    grid-auto-rows: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
     grid-auto-flow: dense;
 }
 li{
     font-family: 'NTR', sans-serif;
     list-style: none;
 }
-li:nth-child(4){
-    grid-row: span 3;
-    background-color: blue;
+li:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: rgb(221, 219, 199);
 }
 li:nth-child(2){
-    grid-row: span 2;
-    background-color: black;
-}
-li:nth-child(5){
-    grid-column: span 4;
-    grid-row: span 2;
-    background-color: rgb(201, 14, 101);
-}
-li:nth-child(8){
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: rgb(175, 127, 214);
+    background-color:#d3d4be;
 }
 li:nth-child(3){
-    grid-column: span 1;
-    grid-row: span 3;
-    background-color: rgb(207, 12, 61);
+    grid-column: 1/3;
+    grid-row: 2;
 }
-li:nth-child(1){
-    grid-column: span 3;
-    grid-row: span 1;
-    background-color: rgb(8, 138, 62);
+li:nth-child(4){
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* img style */
+.wigDuster{
+    width: auto;
+    height:246px;
+}
+/* p style */
+#name {
+    font-size: 30px;
+    text-align: center;
+}
+#contact{
+    text-align: end;
+    padding-right: 20px;
+    font-size: 20px;
 }
