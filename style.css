@@ -3,6 +3,8 @@
 }
 ul{
     display: grid;
+    margin: auto;
+    width: 70vw;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-auto-rows: 80px;
     grid-auto-flow: dense;
@@ -28,5 +30,14 @@ li:nth-child(8){
     grid-column: span 1;
     grid-row: span 1;
     background-color: rgb(175, 127, 214);
-    
+}
+li:nth-child(3){
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(207, 12, 61);
+}
+li:nth-child(1){
+    grid-column: span 3;
+    grid-row: span 1;
+    background-color: rgb(8, 138, 62);
 }
