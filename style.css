@@ -7,8 +7,8 @@ ul{
     margin: auto;
     width: 70vw;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 250px;
-    grid-auto-flow: dense;
+    /* grid-auto-rows: 250px;
+    grid-auto-flow: dense; */
 }
 li{
     font-family: 'NTR', sans-serif;
@@ -33,8 +33,10 @@ li:nth-child(4){
 
 /* img style */
 .wigDuster{
-    width: auto;
-    height:246px;
+    /* width: auto;
+    height:246px; */
+    display: block;
+    width: 100%
 }
 /* p style */
 #name {
@@ -52,6 +54,11 @@ li:nth-child(4){
         margin: 0;
     }
     #contact{
-        font-size: 15px;
+        height: auto;
+        display: block;
+    }
+    .wigDuster{
+        height: auto;
+        display: block;
     }
 }
