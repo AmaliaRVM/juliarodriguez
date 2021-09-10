@@ -1,70 +1,79 @@
-*{
-    box-sizing: border-box;
-}
-ul{
-    display: grid;
-    grid-gap: 1rem;
-    margin: auto;
-    margin-top: 50px;
-    width: 70vw;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* grid-auto-rows: 250px;
-    grid-auto-flow: dense; */
-}
-li{
-    font-family: 'NTR', sans-serif;
-    list-style: none;
-}
-li:nth-child(1){
-    /* grid-column: 1/3;
-    grid-row: 1; */
-    background-color: rgb(221, 219, 199);
-}
-li:nth-child(2){
-    background-color:#d3d4be;
-}
-li:nth-child(3){
-    /* grid-column: 1/3;
-    grid-row: 2; */
-}
-li:nth-child(4){
-    /* grid-column: 3;
-    grid-row: 3; */
-}
-li:nth-child(6){
-    background-color: #eeb2ee;
-    color: rgb(29, 96, 241);
-    text-align: center;
-    font-size: 25px;
+body{
+    margin: 0;
+    /* background-color: rgb(212, 174, 212);
+    background-image: linear-gradient(60deg, #ffffff, rgba(248, 58, 58, 0), #ffffff); */
+    background-image: url('./assets/img/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: 400%;
+    animation: bg-animation 250s infinite alternate;
 }
 
-/* img style */
-.wigDuster{
-    /* width: auto;
-    height:246px; */
-    display: block;
-    width: 100%
+@keyframes bg-animation {
+    0% { 
+        background-position: left; 
+    }
+    100% {
+        background-position: right; 
+    }
+
 }
-/* p style */
-#name {
-    font-size: 30px;
-    text-align: center;
+
+p{
+    font-size: 200px;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'IBM Plex Sans Thai', sans-serif; */
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family: 'Archivo Black', sans-serif; */
+    letter-spacing: 0ch;
+    padding: 0;
+    margin: 0;
+    cursor:context-menu;
 }
-#contact{
-    text-align: end;
+
+a{
+    font-family: 'Bebas Neue', cursive;
+    color: #6A6B5C;
+    text-decoration: none;
+    font-size: 36px; 
+    transition: 1s;
+}
+
+a:hover{
+    color: #D6F361;
+}
+
+.navbar-container{
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 43px;
+    right: 20px;
+}
+
+.navbar-list{
+    display:flex;
+    list-style: none;
+}
+
+.navbar-list li{
     padding-right: 20px;
-    font-size: 20px;
 }
-@media only screen and (max-width: 800px){
-    ul{
-        /* display: block; */
-        margin: 0;
-    }
-    #contact{
-        height: auto;
-        display: block;
-    }
-    .wigDuster{
-        height: 100%;
-    }
+
+.main p{
+    color: #3D4246;
+    padding: 0;
+    margin: 0;
+}
+
+.name-container{
+    position: fixed;
+    bottom: 182px;
+    left: 40px;
+}
+
+.surname-container{
+    position: fixed;
+    bottom: 10px;
+    left: 40px;
 }
