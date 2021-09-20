@@ -1,4 +1,14 @@
 body{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main_container{
+    width: 100vw;
+    height:100vh;
     margin: 0;
     /* background-color: rgb(212, 174, 212);
     background-image: linear-gradient(60deg, #ffffff, rgba(248, 58, 58, 0), #ffffff); */
@@ -18,6 +28,12 @@ body{
 
 }
 
+h1{
+    padding: 0;
+    margin: 0;
+
+}
+
 p{
     font-size: 200px;
     font-family: 'Bebas Neue', sans-serif;
@@ -32,13 +48,13 @@ p{
 
 a{
     font-family: 'Bebas Neue', cursive;
-    color: #6A6B5C;
+    color: #3D4246;
     text-decoration: none;
     font-size: 36px; 
     transition: 1s;
 }
 
-a:hover{
+.link_menu:hover{
     color: #D6F361;
 }
 
@@ -77,3 +93,94 @@ a:hover{
     bottom: 10px;
     left: 40px;
 }
+
+
+/* general work page style */
+
+.work_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_one{
+    margin: 10% 0;
+    width: 40%;
+    height: 100vh;
+}
+
+.container_two{
+    width: 50%;
+    height: 100vh;
+    /* background-color: #FAFAFA; */
+}
+
+.performance_link{
+    color: #3D4246;
+    transition: none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 14px;
+}
+
+.performance_link h1{
+    padding-bottom: 50px;
+}
+
+.research_link{
+    color: #D6F361;
+    transition: none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 14px;
+}
+
+.research_link h1{
+    padding-bottom: 50px;
+}
+
+.collaboration_link{
+    color: #3D4246;
+    transition: none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 14px;
+}
+
+.collaboration_link h1{
+    padding-bottom: 50px;
+}
+
+/* Performance */
+
+.performances{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.piece{
+    width: 300px;
+    text-align: center;
+    margin: 15%;
+    /* border: solid #3D4246; */
+}
+
+.piece p{
+    padding-top: 5px;
+    font-size:18px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 4px;
+}
+
+.piece_image{
+    width: 300px;
+}
+
+.piece_image img{
+    width: 300px;
+    display: block;
+}
+
+.test{
+    object-fit: cover;
+}
+
+
+
