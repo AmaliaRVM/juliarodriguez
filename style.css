@@ -51,12 +51,13 @@ a{
     color: #3D4246;
     text-decoration: none;
     font-size: 36px; 
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .link_menu:hover{
     color: #D6F361;
-}
+    transition: 1s;
+} 
 
 .navbar-container{
     width: 40%;
@@ -112,6 +113,13 @@ a{
     width: 50%;
     height: 100vh;
     /* background-color: #FAFAFA; */
+}
+
+.work_background{
+    background-image: url('./assets/img/images.jpeg');
+    background-repeat: no-repeat;
+    background-size: 400%;
+    animation: bg-animation 250s infinite alternate;
 }
 
 .performance_link{
