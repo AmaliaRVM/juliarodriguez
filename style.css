@@ -150,6 +150,7 @@ a{
 /* Performance */
 
 .performances{
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -158,7 +159,7 @@ a{
 .piece{
     width: 300px;
     text-align: center;
-    margin: 15%;
+    padding-bottom: 10px;
     /* border: solid #3D4246; */
 }
 
